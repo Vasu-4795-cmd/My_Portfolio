@@ -154,7 +154,7 @@ const projectsData = [
     {
         title: "BMI (Body Mass Index)App",
         description: "A BMI App helps users calculate their BMI by entering their height and weight. The app instantly displays the BMI value along with the corresponding health category such as underweight, normal weight, overweight, or obese.",
-        technologies: ["Node.js", "Html/Css", "JavaScript"],
+        technologies: ["flask", "Html/Css", "JavaScript"],
         image: "https://gymitfitness.com/storage/2024/02/Over-35.png",
         demoUrl: "#",              // ✅ different URL
         githubUrl: "https://github.com/Vasu-4795-cmd/BMI-flask"
