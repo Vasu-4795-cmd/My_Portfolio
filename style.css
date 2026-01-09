@@ -122,11 +122,11 @@ p {
 /* ====== DARK MODE TOGGLE ====== */
 .dark-mode-toggle {
     position: fixed;
-    top: 25px;
-    right: 550px;
+    top: 34px;
+    right: 50px;
     z-index: 1000;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: var(--primary-color);
     color: white;
