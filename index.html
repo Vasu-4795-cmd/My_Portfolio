@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 </head>
 <body>
     <!-- Dark Mode Toggle -->
@@ -219,7 +223,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <!-- <form id="contactForm">
                         <div class="form-group">
                             <input type="text" placeholder="Your Name" required>
                         </div>
@@ -235,7 +239,29 @@
                         <!-- <button type="submit" class="btn btn-primary">Send Message</button> -->
                         <button type="submit" class="btn btn-primary" onclick="sendEmail()">Send Message</button>
 
-                    </form>
+                    </form> -->
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" onclick="sendEmail()">
+                            Send Message
+                        </button>
+                        </form>
                 </div>
             </div>
         </div>
@@ -258,5 +284,6 @@
     </footer>
 
     <script src="script.js"></script>
+    
 </body>
 </html>
