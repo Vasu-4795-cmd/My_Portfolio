@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">VDNP<span>.</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3 class="hero-greeting">Hello, I'm</h3>
+                    <h1 class="hero-title">
+                        Vasu Deva Naga <strong style="color: mediumpurple;">Perugu</strong> 
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="animated-text" id="animatedText"></span>
+                        <span class="cursor">|</span>
+                    </h2>
+                    
+                    
+                    <p class="hero-description">
+                        Python Full-Stack Developer responsible for designing, developing, and maintaining dynamic websites using Python-based frameworks, modern frontend technologies, and databases. Skilled in building responsive user interfaces, backend logic, and integrating APIs to deliver secure, scalable, and high-performance web applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        <a href="Resume.pdf" class="btn btn-secondary">Download Resume</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/Vasu-4795-cmd/" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/perugu-vasu-deva-naga-765932358" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/vasu.4795/#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="image-border"></div>
+                        <img src="dev1.jpeg"
+                             alt="John Doe - Full Stack Developer" 
+                             class="profile-img" >
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" 
+                         alt="About Me" 
+                         class="about-img">
+                </div>
+                <div class="about-text">
+                    <h3>Python Fullstack Developer & Problem Solver</h3>
+                    <p>
+                        I am a passionate Python Full-Stack Developer and problem solver with experience in building responsive, scalable, and user-friendly web applications. I specialize in developing robust backend systems using Python frameworks and creating modern frontend interfaces that deliver seamless user experiences.
+                    </p>
+                    <p>
+                        I enjoy solving complex problems, optimizing application performance, and turning ideas into reliable digital solutions. With a strong understanding of full-stack development, databases, and APIs, I focus on writing clean, efficient code and continuously improving my skills to stay updated with evolving technologies.
+                    </p>
+                    <p>
+                        I believe in writing clean, maintainable code and staying updated with the 
+                        latest industry trends. When I'm not coding, I enjoy contributing to 
+                        open-source projects and learning new technologies.
+                    </p>
+                    <!-- <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Perugu Vasu Deva Naga</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">vasuperugu6@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Andhra Pradesh, IND</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Freelance:</span>
+                            <span class="info-value available">Available</span>
+                        </div>
+                    </div>
+                    <a href="Resume.pdf" class="btn btn-primary">Download Resume</a>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="skills-content">
+                <div class="skills-left">
+                    <h3>Technical Skills</h3>
+                    <p>
+                        I've worked with a wide range of technologies in web development. 
+                        Here are some of my core competencies:
+                    </p>
+                    <div class="skill-bars">
+                        <!-- Skill bars will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="skills-right">
+                    <h3>Professional Skills</h3>
+                    <p>
+                        Beyond technical abilities, I bring these professional skills to every project:
+                    </p>
+                    <div class="professional-skills">
+                        <div class="pro-skill">
+                            <span class="skill-name">Problem Solving</span>
+                            <div class="skill-circle" data-percent="95">
+                                <span class="skill-percent">95%</span>
+                            </div>
+                        </div>
+                        <div class="pro-skill">
+                            <span class="skill-name">Team Collaboration</span>
+                            <div class="skill-circle" data-percent="90">
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                        <div class="pro-skill">
+                            <span class="skill-name">Communication</span>
+                            <div class="skill-circle" data-percent="88">
+                                <span class="skill-percent">88%</span>
+                            </div>
+                        </div>
+                        <div class="pro-skill">
+                            <span class="skill-name">Project Management</span>
+                            <div class="skill-circle" data-percent="85">
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Project cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Andhra Pradesh, IND</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>vasuperugu6@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9701994156</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary">Send Message</button> -->
+                        <button type="submit" class="btn btn-primary" onclick="sendEmail()">Send Message</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="logo">VDNP<span>.</span></a>
+                <div class="footer-social">
+                    <a href="https://github.com/Vasu-4795-cmd/"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/perugu-vasu-deva-naga-765932358"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/vasu.4795/#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="copyright">&copy; 2026 Vasu Deva Naga Perugu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
