@@ -147,21 +147,29 @@ const projectsData = [
         title: "Bus-Ticket Booking",
         description: "A Bus Ticket Booking System is an online platform that allows users to search for buses, check routes, view seat availability, compare fares, and book tickets easily.",
         technologies: ["React", "Django Rest api", "MySQL"],
-        image: "https://www.shutterstock.com/image-vector/bus-ticket-online-pay-smart-600nw-2595978685.jpg"
+        image: "https://www.shutterstock.com/image-vector/bus-ticket-online-pay-smart-600nw-2595978685.jpg",
+        demoUrl: "demo.mp4",              
+        githubUrl: "https://github.com/Vasu-4795-cmd/Bus_Ticket_Booking_Fullstack-Project1"
     },
     {
         title: "BMI (Body Mass Index)App",
         description: "A BMI App helps users calculate their BMI by entering their height and weight. The app instantly displays the BMI value along with the corresponding health category such as underweight, normal weight, overweight, or obese.",
         technologies: ["Node.js", "Html/Css", "JavaScript"],
-        image: "https://gymitfitness.com/storage/2024/02/Over-35.png"
+        image: "https://gymitfitness.com/storage/2024/02/Over-35.png",
+        demoUrl: "#",              // ✅ different URL
+        githubUrl: "https://github.com/Vasu-4795-cmd/BMI-flask"
     },
     {
         title: "Travel Blog",
         description: "A responsive blog website for travel enthusiasts with photo galleries, user comments, and location mapping.",
         technologies: ["Next.js", "GraphQL", "Mapbox"],
-        image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        demoUrl: "#",              // ✅ different URL
+        githubUrl: "#"
     }
 ];
+
+
 
 function renderProjects() {
     projectsGrid.innerHTML = projectsData.map(project => `
@@ -174,8 +182,8 @@ function renderProjects() {
                     ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
                 <div class="project-links">
-                    <a href="#" class="btn btn-primary">Live Demo</a>
-                    <a href="#" class="btn btn-secondary">GitHub</a>
+                    <a href="${project.demoUrl}" class="btn btn-primary">Live Demo</a>
+                    <a href="${project.githubUrl}" class="btn btn-secondary">GitHub</a>
                 </div>
             </div>
         </div>
