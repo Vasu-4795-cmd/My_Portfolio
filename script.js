@@ -44,17 +44,17 @@ function typeWriter() {
     if (!isPaused) {
         if (!isDeleting && charIndex <= currentText.length) {
             animatedText.textContent = currentText.substring(0, charIndex++);
-            setTimeout(typeWriter, 100);
+            setTimeout(typeWriter, 50);
         } else if (isDeleting && charIndex >= 0) {
             animatedText.textContent = currentText.substring(0, charIndex--);
-            setTimeout(typeWriter, 50);
+            setTimeout(typeWriter, 25);
         } else {
             isPaused = true;
             setTimeout(() => {
                 isPaused = false;
                 isDeleting = !isDeleting;
-                setTimeout(typeWriter, 500);
-            }, 1500);
+                setTimeout(typeWriter, 200);
+            }, 0);
         }
     }
 }
@@ -81,7 +81,7 @@ const skillsData = [
     { name: "React", percentage: 88 },
     { name: "Python", percentage: 85 },
     { name: "Django", percentage: 82 },
-    { name: "MySQL", percentage: 80 }
+    { name: "MySQL", percentage: 90 }
 ];
 
 function renderSkillBars() {
